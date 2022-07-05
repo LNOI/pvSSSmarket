@@ -9,10 +9,10 @@
 <body>
     <form action="/add" method="post"> {% csrf_token %}
         <label>Time</label>
-        <input type="datetime" name="time">
+        <input type="datetime" name="time" value="{{time}}">
         <br>
         <label>Ip</label>
-        <input type="text" name="ip">
+        <input type="text" name="ip" value="{{ip}}">
         <br>
         <input type="submit">
     </form>
